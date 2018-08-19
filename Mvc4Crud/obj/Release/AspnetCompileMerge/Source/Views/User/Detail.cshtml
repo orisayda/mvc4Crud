@@ -1,0 +1,25 @@
+﻿@model Mvc4Crud.Models.UpdateUser
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>User Detail</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        User Id: @Html.DisplayTextFor(m => m.user_id)
+    </p>
+     <p>
+        User Id: @Html.DisplayTextFor(m => m.first_name)
+    </p> <p>
+        User Id: @Html.DisplayTextFor(m => m.last_name)
+    </p> <p>
+        User Id: @Html.DisplayTextFor(m => m.email)
+    </p> 
+    <p>
+        User Id: @Html.DisplayTextFor(m => m.password)
+    </p>
+}
+

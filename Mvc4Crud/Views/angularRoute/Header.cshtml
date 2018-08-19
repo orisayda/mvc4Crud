@@ -1,0 +1,308 @@
+﻿      <!-- navbar header -->
+@using System.Globalization;
+
+@{
+    Layout = null;
+
+}
+
+@{
+    var notification_count = string.Empty;
+
+    if (Session["notification_count"] != null)
+    {
+        notification_count = Convert.ToString(Session["notification_count"]);
+
+        TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+
+        notification_count = textInfo.ToTitleCase(notification_count);
+
+    }
+    else
+    {
+        notification_count = null;
+
+    }
+}
+
+
+<div class="navbar-header {{app.settings.navbarHeaderColor}}">
+   
+    <button class="pull-right visible-xs dk" ui-toggle-class="show" data-target=".navbar-collapse">
+        <i class="glyphicon glyphicon-align-justify"></i>
+
+    </button>
+
+    <div class="pull-right visible-xs dk dropdown" ng-controller="HeaderController1">
+
+        <button class="dropdown-toggle" ng-click="notify1()" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #0094ff; border: none; color: #eee; margin-top: 15px; padding-bottom: 15px; padding-left: 15px;">
+            <i class="icon-bell fa-fw">
+            </i>
+            <span class="badge badge-danger" id="getNotificationCount1" data-count="@notification_count" style="background-color: blue;" ng-show="notification_count1">{{notification_count1}}</span>
+
+        </button>
+
+        <div class="dropdown-menu w-xl animated fadeInUp" style="right:-50px;left:auto;" aria-labelledby="dropdownMenuButton">
+            <div class="panel bg-white">
+                <div class="panel-heading b-light bg-light">
+                    <strong>You have <span>@notification_count </span> notifications</strong>
+                </div>
+
+                <div class="list-group" style="overflow-y: scroll; height:200px;">
+
+                    @foreach (var eve in ViewBag.notifications)
+                    {
+                        DateTime date = DateTime.Parse(Convert.ToString(eve.start_date));
+                        string startDate = date.ToString("yyyy-MM-dd");
+
+                        if (eve.priority == "High")
+                        {
+                            <a ui-sref="app.event_list" class="list-group-item" style="background-color: #f05050;color:  #fff !important;">
+
+                                <span class="clear block m-b-none">
+                                    @eve.title<br>
+
+                                    <small class="text-muted">@startDate</small>
+                                </span>
+                            </a>
+                        }
+                        else if (eve.priority == "Medium")
+                        {
+                            <a ui-sref="app.event_list" class="list-group-item" style="background-color: #fad733; color: #fff !important;">
+
+                                <span class="clear block m-b-none">
+                                    @eve.title<br>
+
+                                    <small class="text-muted">@startDate</small>
+                                </span>
+                            </a>
+
+                        }
+                        else if (eve.priority == "Low")
+                        {
+                            <a ui-sref="app.event_list" class="list-group-item" style="background-color: #23b7e5; color: #fff !important;">
+
+                                <span class="clear block m-b-none">
+                                    @eve.title<br>
+
+                                    <small class="text-muted">@startDate</small>
+                                </span>
+                            </a>
+
+                        }
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+   
+    <div class="text-center">
+        <!-- brand -->
+        <a href="#/" class="navbar-brand text-lt">
+
+
+            <span class="hidden-folded m-l-sm" style="font-size: 100px;"> <img src="/img/header_logo.png" alt="..."></span>
+
+        </a>
+    </div>
+    <!-- / brand -->
+</div>
+
+
+<div class="collapse pos-rlt navbar-collapse box-shadow ng-scope" ng-controller="HeaderController" id="HeaderController_id" ng-init="app.settings.container = false;">
+
+
+    <div class="row">
+
+
+        <div class="col-sm-5 hidden-xs" style="margin-top: 25px;">
+            <ul class="nav navbar-nav">
+                <li>
+                    <span style="margin-top: 10px;margin-right: 100px;" class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                        <img src="/img/header_logo.png" alt="..." width="150">
+                    </span>
+                </li>
+                <li>
+                    <a ui-sref="app.event_list">
+                        <i class="icon-list icon"></i> &nbsp;
+                        <span class="text-center">TASKS LIST</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a ui-sref="app.event">
+                        <i class="icon-plus icon"></i>&nbsp;
+                        <span class="text-center">CREATE TASK</span>
+                    </a>
+                </li>
+
+
+
+                <li>
+                    <a ui-sref="app.aboutUs">
+                        <i class="icon-info icon"></i>&nbsp;
+                        <span class="text-center">ABOUT AS</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-sm-3 hidden-xs" style="margin-top: 8px;">
+           
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+
+        <ul class="nav navbar-nav navbar-right" style="margin: 0 10px;">
+            <li class="hidden-sm hidden-md hidden-lg">
+                <a ui-sref="app.event_list">
+                    <i class="icon-list icon"></i> &nbsp;
+                    <span class="text-center">TASKS LIST</span>
+                </a>
+            </li>
+
+            <li class="hidden-sm hidden-md hidden-lg">
+                <a ui-sref="app.event">
+                    <i class="icon-plus icon"></i>&nbsp;
+                    <span class="text-center">CREATE TASK</span>
+                </a>
+            </li>
+
+
+
+            <li class="hidden-sm hidden-md hidden-lg">
+                <a ui-sref="app.aboutUs">
+                    <i class="icon-info icon"></i>&nbsp;
+                    <span class="text-center">ABOUT AS</span>
+                </a>
+            </li>
+
+            <li class="hidden-xs">
+                <a ui-fullscreen></a>
+            </li>
+           
+            <li ng-click="notify()" class="dropdown hidden-xs" dropdown>
+                <a href class="dropdown-toggle" dropdown-toggle>
+                    <i class="icon-bell fa-fw"></i>
+                    <span class="visible-xs-inline">Notifications</span>
+                    <span class="badge badge-sm up bg-danger pull-right-xs" id="getNotificationCount" data-count="@notification_count" ng-show="notification_count">{{notification_count}}</span>
+                </a>
+                <!-- dropdown -->
+                <div class="dropdown-menu w-xl animated fadeInUp">
+                    <div class="panel bg-white">
+                        <div class="panel-heading b-light bg-light">
+                            <strong>You have <span>@notification_count</span> notifications</strong>
+                        </div>
+                        <div class="list-group" style="overflow-y: scroll; height:200px;">
+
+
+
+                            @foreach (var eve in ViewBag.notifications)
+                            {
+                                DateTime date = DateTime.Parse(Convert.ToString(eve.start_date));
+                                string startDate = date.ToString("yyyy-MM-dd");
+
+                                if (eve.priority == "High")
+                                {
+                                    <a ui-sref="app.event_list" class="list-group-item" style="background-color: #f05050;color:  #fff !important;">
+
+                                        <span class="clear block m-b-none">
+                                            @eve.title<br>
+
+                                            <small class="text-muted">@startDate</small>
+                                        </span>
+                                    </a>
+                                }
+                                else if (eve.priority == "Medium")
+                                {
+                                    <a ui-sref="app.event_list" class="list-group-item" style="background-color: #fad733; color: #fff !important;">
+
+                                        <span class="clear block m-b-none">
+                                            @eve.title<br>
+
+                                            <small class="text-muted">@startDate</small>
+                                        </span>
+                                    </a>
+
+                                }
+                                else if (eve.priority == "Low")
+                                {
+                                    <a ui-sref="app.event_list" class="list-group-item" style="background-color: #23b7e5; color: #fff !important;">
+
+                                        <span class="clear block m-b-none">
+                                            @eve.title<br>
+
+                                            <small class="text-muted">@startDate</small>
+                                        </span>
+                                    </a>
+
+                                }
+                            }
+
+                        </div>
+                    </div>
+                </div>
+                <!-- / dropdown -->
+            </li>
+            <li class="dropdown" dropdown>
+                <a href class="dropdown-toggle clear" dropdown-toggle>
+                    <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                        <img src="/img/a0.jpg" alt="...">
+                        <i class="on md b-white bottom"></i>
+                    </span>
+                    @{
+                        var userName = string.Empty;
+                        //string user_id;
+                        if (Session["first_name"] != null)
+                        {
+                            userName = Convert.ToString(Session["first_name"]);
+                            //user_id = Convert.ToString(Session["user_id"]);
+
+                            TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
+
+                            userName = textInfo.ToTitleCase(userName);
+
+                        }
+                        else
+                        {
+                            userName = "John Smith";
+                            //user_id = "321";
+                        }
+                    }
+                    <span class="hidden-sm hidden-md">@(userName)</span> <b class="caret"></b>
+                </a>
+                <!-- dropdown -->
+                <ul class="dropdown-menu animated fadeInRight w">
+
+                    @*<li class="divider"></li>*@
+                    <li>
+                        <a href="/User/Logout">Logout</a>
+                    </li>
+                </ul>
+                <!-- / dropdown -->
+            </li>
+        </ul>
+        <!-- / navbar right -->
+
+    </div>
+
+    <div class="row">
+
+        <ul class="nav navbar-nav hidden-xs">
+
+          
+
+        </ul>
+    </div>
+
+
+
+
+
+
+</div>
+
+<!-- / navbar collapse -->

@@ -1,0 +1,237 @@
+﻿
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title Angular version | Angulr</title>
+    <meta name="description" content="Angularjs, Html5, Music, Landing, 4 in 1 ui kits package" />
+    <meta name="keywords" content="AngularJS, angular, bootstrap, admin, dashboard, panel, app, charts, components,flat, responsive, layout, kit, ui, route, web, app, widgets" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    @Styles.Render("~/libs/assets/animate.css/animate.css")
+    @Styles.Render("~/libs/assets/font-awesome/css/font-awesome.min.css")
+    @Styles.Render("~/libs/assets/simple-line-icons/css/simple-line-icons.css")
+    @Styles.Render("~/libs/jquery/bootstrap/dist/css/bootstrap.css")
+
+    <!--  <link rel="stylesheet" href="../libs/assets/animate.css/animate.css" type="text/css" />
+     <link rel="stylesheet" href="../libs/assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+     <link rel="stylesheet" href="../libs/assets/simple-line-icons/css/simple-line-icons.css" type="text/css" />
+     <link rel="stylesheet" href="../libs/jquery/bootstrap/dist/css/bootstrap.css" type="text/css" /> done
+
+    <!--   build:css css/app.min.css -->
+    @Styles.Render("~/src/css/font.css")
+    @Styles.Render("~/src/css/app.css")
+
+    <!-- <link rel="stylesheet" href="css/font.css" type="text/css" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <!-- endbuild -->
+</head>
+<body>
+
+
+    <div id="mainContainer" data-ng-view="">
+
+    </div>
+
+
+
+
+
+    <!-- build:js js/app.angular.js -->
+    <!-- jQuery <script src="../libs/jquery/jquery/dist/jquery.js"></script> -->
+    @Scripts.Render("~/libs/jquery/jquery/dist/jquery.js")
+
+    <!-- Bootstrap <script src="../libs/jquery/bootstrap/dist/js/bootstrap.js"></script>-->
+    @Scripts.Render("~/libs/jquery/bootstrap/dist/js/bootstrap.js")
+
+    <!-- Angular
+         <script src="../libs/angular/angular/angular.js"></script>
+         <script src="../libs/angular/angular-animate/angular-animate.js"></script>
+    <script src="../libs/angular/angular-aria/angular-aria.js"></script>
+    <script src="../libs/angular/angular-cookies/angular-cookies.js"></script>
+    <script src="../libs/angular/angular-messages/angular-messages.js"></script>
+    <script src="../libs/angular/angular-resource/angular-resource.js"></script>
+    <script src="../libs/angular/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../libs/angular/angular-touch/angular-touch.js"></script>
+
+    <script src="../libs/angular/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../libs/angular/ngstorage/ngStorage.js"></script>
+    <script src="../libs/angular/angular-ui-utils/ui-utils.js"></script>
+
+
+    -->
+    @Scripts.Render("~/libs/angular/angular/angular.js")
+    @Scripts.Render("~/libs/angular/angular-animate/angular-animate.js")
+    @Scripts.Render("~/libs/angular/angular-aria/angular-aria.js")
+    @Scripts.Render("~/libs/angular/angular-cookies/angular-cookies.js")
+    @Scripts.Render("~/libs/angular/angular-messages/angular-messages.js")
+    @Scripts.Render("~/libs/angular/angular-resource/angular-resource.js")
+    @Scripts.Render("~/libs/angular/angular-sanitize/angular-sanitize.js")
+    @Scripts.Render("~/libs/angular/angular-touch/angular-touch.js")
+
+    @Scripts.Render("~/libs/angular/angular-ui-router/release/angular-ui-router.js")
+    @Scripts.Render("~/libs/angular/ngstorage/ngStorage.js")
+    @Scripts.Render("~/libs/angular/angular-ui-utils/ui-utils.js")
+
+
+
+    <!-- bootstrap <script src="../libs/angular/angular-bootstrap/ui-bootstrap-tpls.js"></script> -->
+    @Scripts.Render("~/libs/angular/angular-bootstrap/ui-bootstrap-tpls.js")
+
+
+    <!-- lazyload     <script src="../libs/angular/oclazyload/dist/ocLazyLoad.js"></script> -->
+    @Scripts.Render("~/libs/angular/oclazyload/dist/ocLazyLoad.js")
+
+    <!-- translate   <script src="../libs/angular/angular-translate/angular-translate.js"></script>
+    <script src="../libs/angular/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="../libs/angular/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+    <script src="../libs/angular/angular-translate-storage-local/angular-translate-storage-local.js"></script>-->
+    @* @Scripts.Render("~/Content/angular/libs/angular/angular-translate/angular-translate.js")
+        @Scripts.Render("~/Content/angular/libs/angular/angular-translate-loader-static-files/angular-translate-loader-static-files.js")
+        @Scripts.Render("~/Content/angular/libs/angular/angular-translate-storage-cookie/angular-translate-storage-cookie.js")
+        @Scripts.Render("~/Content/angular/libs/angular/angular-translate-storage-local/angular-translate-storage-local.js")
+    *@
+    @Scripts.Render("~/libs/angular/angular-translate/angular-translate.js")
+    @Scripts.Render("~/libs/angular/angular-translate-loader-static-files/angular-translate-loader-static-files.js")
+    @Scripts.Render("~/libs/angular/angular-translate-storage-cookie/angular-translate-storage-cookie.js")
+    @Scripts.Render("~/libs/angular/angular-translate-storage-local/angular-translate-storage-local.js")
+    <!-- App    <script src="/Content/angular/src/js/app.js"></script>
+      <script src="/Content/angular/src/js/config.js"></script>
+      <script src="/Content/angular/src/js/config.lazyload.js"></script>
+      <script src="/Content/angular/src/js/config.router.js"></script>
+      <script src="/Content/angular/src/js/main.js"></script>
+      <script src="/Content/angular/src/js/services/ui-load.js"></script>
+      <script src="/Content/angular/src/js/filters/fromNow.js"></script>
+      <script src="/Content/angular/src/js/directives/setnganimate.js"></script>
+      <script src="/Content/angular/src/js/directives/ui-butterbar.js"></script>
+      <script src="/Content/angular/src/js/directives/ui-focus.js"></script>
+      <script src="/Content/angular/src/js/directives/ui-fullscreen.js"></script>
+      <script src="/Content/angular/src/js/directives/ui-jq.js"></script>
+      <script src="/Content/angular/src/js/directives/ui-module.js"></script>
+      <script src="/Content/angular/src/js/directives/ui-nav.js"></script>
+      <script src="/Content/angular/src/js/directives/ui-scroll.js"></script>
+      <script src="/Content/angular/src/js/directives/ui-shift.js"></script>
+      <script src="/Content/angular/src/js/directives/ui-toggleclass.js"></script>
+      <script src="/Content/angular/src/js/controllers/bootstrap.js"></script>
+    -->
+    @*
+        @Scripts.Render("~/Content/angular/src/js/app.js")
+        @Scripts.Render("~/Content/angular/src/js/config.js")
+        @Scripts.Render("~/Content/angular/src/js/config.lazyload.js")
+        @Scripts.Render("~/Content/angular/src/js/config.router.js")
+        @Scripts.Render("~/Content/angular/src/js/main.js")
+        @Scripts.Render("~/Content/angular/src/js/services/ui-load.js")
+        @Scripts.Render("~/Content/angular/src/js/filters/fromNow.js")
+        @Scripts.Render("~/Content/angular/src/js/directives/setnganimate.js")
+        @Scripts.Render("~/Content/angular/src/js/directives/ui-butterbar.js")
+        @Scripts.Render("~/Content/angular/src/js/directives/ui-focus.js")
+        @Scripts.Render("~/Content/angular/src/js/directives/ui-fullscreen.js")
+        @Scripts.Render("~/Content/angular/src/js/directives/ui-jq.js")
+        @Scripts.Render("~/Content/angular/src/js/directives/ui-module.js")
+        @Scripts.Render("~/Content/angular/src/js/directives/ui-nav.js")
+        @Scripts.Render("~/Content/angular/src/js/directives/ui-scroll.js")
+        @Scripts.Render("~/Content/angular/src/js/directives/ui-shift.js")
+        @Scripts.Render("~/Content/angular/src/js/directives/ui-toggleclass.js")
+        @Scripts.Render("~/Content/angular/src/js/controllers/bootstrap.js")
+    *@
+
+
+
+
+    
+        @Scripts.Render("~/src/js/app.js")
+        @Scripts.Render("~/src/js/config.js")
+        @Scripts.Render("~/src/js/config.lazyload.js")
+        @Scripts.Render("~/src/js/config.router.js")
+        @Scripts.Render("~/src/js/main.js")
+    
+    @Scripts.Render("~/src/js/services/ui-load.js")
+    @Scripts.Render("~/src/js/filters/fromNow.js")
+    @Scripts.Render("~/src/js/directives/setnganimate.js")
+    @Scripts.Render("~/src/js/directives/ui-butterbar.js")
+    @Scripts.Render("~/src/js/directives/ui-focus.js")
+    @Scripts.Render("~/src/js/directives/ui-fullscreen.js")
+    @Scripts.Render("~/src/js/directives/ui-jq.js")
+    @Scripts.Render("~/src/js/directives/ui-module.js")
+    @Scripts.Render("~/src/js/directives/ui-nav.js")
+    @Scripts.Render("~/src/js/directives/ui-scroll.js")
+    @Scripts.Render("~/src/js/directives/ui-shift.js")
+    @Scripts.Render("~/src/js/directives/ui-toggleclass.js")
+    @Scripts.Render("~/src/js/controllers/bootstrap.js")
+
+
+    @*
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+    @RenderSection("scripts", required: false)
+
+
+    <script>
+        var demoApp = angular.module('app', []);
+        demoApp.config(function ($routeProvider) {
+            $routeProvider
+            .when('/',
+            {
+                controller: 'SimpleController',
+                templateUrl: 'main.html'
+            })
+            .when('/mainSignup',
+            {
+                controller: 'SimpleController',
+                templateUrl: 'mainSignup.html'
+            })
+            .when('/view2',
+            {
+                controller: 'SimpleController',
+                templateUrl: 'partialViews/view2.html'
+            })
+            .otherwise({ redirectTo: '/' });
+        });
+
+        demoApp.factory('simpleFactory', function () {
+            var customers = [
+            { name: 'fyaz', city: 'sukkur' },
+            { name: 'moiz', city: 'karachi1' },
+            { name: 'sarmad', city: 'karachi2' }
+            ];
+            var factory = {};
+            factory.getCustomers = function () {
+                return customers;
+            };
+            factory.putCustomer = function (customer) {
+
+            };
+
+            return factory;
+
+        });
+
+        /*  function SimpleController($scope) {
+        $scope.customers = [
+        { name: 'fyaz', city: 'sukkur' },
+        { name: 'moiz', city: 'karachi1' },
+        { name: 'sarmad', city: 'karachi2' }
+        ];
+        }*/
+
+        //demoApp.controller('SimpleController', SimpleController);
+        demoApp.controller('SimpleController', function ($scope, simpleFactory) {
+
+
+        });
+        /*
+        var controllers = {};
+        controllers.SimpleController = function ($scope) {
+        $scope.customers = [
+        { name: 'fyaz', city: 'sukkur' },
+        { name: 'moiz', city: 'karachi1' },
+        { name: 'sarmad', city: 'karachi2' }
+        ];
+        }
+        demoApp.controller(controllers);
+        */
+
+    </script>
+
+
+</body>
+</html>

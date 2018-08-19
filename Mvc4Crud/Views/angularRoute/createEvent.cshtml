@@ -1,0 +1,154 @@
+﻿@{
+    Layout = null;
+}
+
+
+<div class="bg-light lter b-b wrapper-md">
+    <h2 class="m-n font-thin h3">Create Task</h2>
+</div>
+<div class="wrapper-md" ng-controller="FormEventController" ng-init="app.settings.container = false;">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2" >
+            <div class="panel panel-default">
+                <div class="panel-heading font-bold">Create Task</div>
+                <div class="panel-body">
+                    <form class="bs-example form-horizontal">
+                        <div class="text-danger wrapper text-center" ng-show="addError">
+                            {{addError}}
+                        </div>                       
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Title</label>
+                            <div class="col-lg-10">
+                                <input type="text" data-ng-model="newEvent.event_title" class="form-control" placeholder="Title">
+                                <span class="help-block m-b-none">Picnic, Concert etc</span>
+                                <div style="margin-top: 5px;" class="text-danger text-left" ng-show="required_title">
+                                    {{required_title}}
+                                </div> 
+                            </div>
+                        </div>
+
+                       @*<div class="form-group">
+        <label class="col-sm-2 control-label text-left">Select Location</label>
+        <div class="col-sm-5">
+
+            <ui-select data-ng-model="newEvent.event_location"  theme="bootstrap" required>
+                <ui-select-match placeholder="Select or search a Location in a list...">{{$select.selected.country_name}}</ui-select-match>
+                <ui-select-choices repeat="item in countries | filter: $select.search">
+                    <div ng-bind-html="item.country_name | highlight: $select.search"></div>
+                    <small ng-bind-html="item.code | highlight: $select.search"></small>
+                </ui-select-choices>
+            </ui-select>
+
+        </div>
+    </div>*@ 
+
+                        <div class="form-group">                            
+
+                            <label class="col-sm-2 control-label">Start Date</label>                           
+
+                                <div class="col-sm-4" ng-controller="DatepickerDemoCtrl">
+                                    <div class="input-group w-md">
+                                        <input type="text" data-ng-model="newEvent.start_date" class="form-control" required datepicker-popup="{{format}}"
+                                               is-open="opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <label class="col-sm-2 control-label text-left">Start Time</label>
+                                <div class="col-sm-4">
+
+                                    <ui-select data-ng-model="newEvent.start_time" theme="bootstrap">
+                                        <ui-select-match placeholder="Select or Time in a list...">{{$select.selected.time}}</ui-select-match>
+                                        <ui-select-choices repeat="item in times | filter: $select.search">
+                                            <div ng-bind-html="item.time| highlight: $select.search"></div>
+                                        </ui-select-choices>
+                                    </ui-select>
+
+                                </div>
+
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label class="col-sm-2 control-label ">End Date</label>
+                            <div class="col-sm-4" ng-controller="DatepickerDemoCtrl">
+                                <div class="input-group w-md">
+                                    <input type="text" data-ng-model="newEvent.end_date" class="form-control" datepicker-popup="{{format}}" 
+                                           is-open="opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </div>
+                                <div style="margin-top: 5px;" class="text-danger text-left" ng-show="required_date">
+                                    {{required_date}}
+                                </div>   
+                            </div>
+
+                            <label class="col-sm-2 control-label text-left">End Time</label>
+                            <div class="col-sm-4">
+
+                                <ui-select data-ng-model="newEvent.end_time" theme="bootstrap">
+                                    <ui-select-match placeholder="Select or Time in a list...">{{$select.selected.time}}</ui-select-match>
+                                    <ui-select-choices repeat="item in times | filter: $select.search">
+                                        <div ng-bind-html="item.time | highlight: $select.search"></div>
+                                    </ui-select-choices>
+                                </ui-select>
+
+                            </div>
+
+
+                        </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Priority</label>
+                        <div class="col-sm-4">
+
+                            <ui-select required data-ng-model="newEvent.priority" ng-change="pChange()" theme="bootstrap">
+                                <ui-select-match placeholder="Select Priority">{{$select.selected.p}}</ui-select-match>
+                                <ui-select-choices repeat="item in priorities | filter: $select.search">
+                                    <div ng-bind-html="item.p | highlight: $select.search"></div>
+                                </ui-select-choices>
+                            </ui-select>
+                            <div style="margin-top: 5px;" class="text-danger text-left" ng-show="required_priority">
+                                {{required_priority}}
+                            </div>        
+
+                        </div>
+                    </div>
+
+
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Description</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" data-ng-model="newEvent.description" rows="5" id="comment"></textarea>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button type="submit" ng-click="addEvent()" class="btn btn-sm btn-success" ng-disabled='form.$invalid'>SAVE TASK</button>
+                                <button type="button" ui-sref="app.event_list" class="btn btn-sm btn-danger" >CANCEL</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+

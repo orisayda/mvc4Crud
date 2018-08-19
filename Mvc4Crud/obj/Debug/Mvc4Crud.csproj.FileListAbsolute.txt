@@ -1,0 +1,236 @@
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Mvc4Crud.dll.config
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Mvc4Crud.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Mvc4Crud.pdb
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Antlr3.Runtime.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\EntityFramework.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\EntityFramework.SqlServer.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Core.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Cookies.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Facebook.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Google.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.OAuth.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Twitter.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Web.Infrastructure.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Newtonsoft.Json.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Owin.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.Helpers.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.Mvc.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.Optimization.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.Razor.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Deployment.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Razor.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\WebGrease.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.Helpers.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.Mvc.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.Optimization.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.Razor.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Deployment.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Razor.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Newtonsoft.Json.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Antlr3.Runtime.pdb
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\EntityFramework.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\EntityFramework.SqlServer.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Core.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Facebook.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Cookies.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.OAuth.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Google.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Twitter.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\obj\Debug\Mvc4Crud.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\obj\Debug\Mvc4Crud.pdb
+D:\dot net\Mvc4Crud\Mvc4Crud\obj\Debug\Mvc4Crud.csprojResolveAssemblyReference.cache
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\PagedList.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\PagedList.Mvc.dll
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\PagedList.xml
+D:\dot net\Mvc4Crud\Mvc4Crud\bin\PagedList.Mvc.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Mvc4Crud.dll.config
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Mvc4Crud.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Mvc4Crud.pdb
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Antlr3.Runtime.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\EntityFramework.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\EntityFramework.SqlServer.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Newtonsoft.Json.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Owin.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\PagedList.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\PagedList.Mvc.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.Helpers.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.Mvc.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.Optimization.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.Razor.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Deployment.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Razor.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\WebGrease.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\EntityFramework.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\EntityFramework.SqlServer.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\PagedList.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\PagedList.Mvc.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.Helpers.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.Mvc.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.Optimization.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.Razor.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Deployment.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Razor.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Newtonsoft.Json.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Antlr3.Runtime.pdb
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\obj\Debug\Mvc4Crud.csproj.CoreCompileInputs.cache
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\obj\Debug\Mvc4Crud.dll
+C:\Users\fdida\Desktop\Mvc4Crud\Mvc4Crud\obj\Debug\Mvc4Crud.pdb
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Mvc4Crud.dll.config
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Mvc4Crud.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Mvc4Crud.pdb
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Antlr3.Runtime.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\EntityFramework.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\EntityFramework.SqlServer.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Newtonsoft.Json.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Owin.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\PagedList.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\PagedList.Mvc.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.Helpers.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.Mvc.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.Optimization.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.Razor.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Razor.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\WebGrease.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\EntityFramework.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\EntityFramework.SqlServer.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\PagedList.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\PagedList.Mvc.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.Helpers.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.Mvc.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.Optimization.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.Razor.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\System.Web.WebPages.Razor.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Newtonsoft.Json.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Antlr3.Runtime.pdb
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\obj\Debug\Mvc4Crud.csprojResolveAssemblyReference.cache
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\obj\Debug\Mvc4Crud.dll
+C:\Users\ori saida\Desktop\study\web\Mvc4Crud\Mvc4Crud\obj\Debug\Mvc4Crud.pdb
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Mvc4Crud.dll.config
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Mvc4Crud.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Mvc4Crud.pdb
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Antlr3.Runtime.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\EntityFramework.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\EntityFramework.SqlServer.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Newtonsoft.Json.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Owin.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\PagedList.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\PagedList.Mvc.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.Helpers.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.Mvc.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.Optimization.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.Razor.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.WebPages.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.WebPages.Razor.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\WebGrease.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\EntityFramework.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\EntityFramework.SqlServer.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\PagedList.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\PagedList.Mvc.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.Helpers.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.Mvc.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.Optimization.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.Razor.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.WebPages.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\System.Web.WebPages.Razor.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Newtonsoft.Json.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Antlr3.Runtime.pdb
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\obj\Debug\Mvc4Crud.csprojResolveAssemblyReference.cache
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\obj\Debug\Mvc4Crud.dll
+C:\Users\ori saida\Desktop\study\web\web assignment\Mvc4Crud\obj\Debug\Mvc4Crud.pdb

@@ -1,0 +1,41 @@
+﻿@model List<Mvc4Crud.Models.Users>
+@if (TempData["Message"] != null)
+{
+    <script>
+
+         @*console.log('@(TempData["shortMessage"])');*@
+         alert('@(TempData["Message"])');
+    </script>
+}
+@{
+    ViewBag.Title = "ListUsers";
+}
+
+<h2>List Of Users</h2>
+
+<table>
+    <tr>
+        <th>User Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+        <th>Password</th>        
+    </tr>
+    @foreach(Mvc4Crud.Models.Users u in Model)
+    {
+        <tr>
+            <td> @u.user_id</td>
+            <td> @u.first_name</td>
+            <td> @u.last_name</td>
+            <td> @u.email</td>
+            <td> @u.password</td>
+            <td> @Html.ActionLink("Detail", "Detail", "User", new {Id =@u.user_id},null)</td>
+            <td> @Html.ActionLink("Edit", "Edit", "User", new { Id = @u.user_id }, null)</td>
+            <td> @Html.ActionLink("Delete", "Delete", "User", new { Id = @u.user_id }, null)</td>
+        </tr>
+    }
+</table>
+
+
+
+

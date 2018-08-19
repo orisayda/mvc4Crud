@@ -1,0 +1,390 @@
+﻿
+@model PagedList.IPagedList<Mvc4Crud.Models.Events>
+      
+
+@using PagedList.Mvc;
+
+@*model List<Mvc4Crud.Models.Events>*@
+
+@{
+    Layout = null;
+}
+
+
+<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3">Static Table</h1>
+</div>
+<div class="wrapper-md" ng-controller="TableEventListController" id="tableEventListController_id" ng-init="app.settings.container = false;">
+    <div class="row">      
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Responsive Table
+            </div>
+            <div class="row wrapper">
+                <div class="col-sm-5 m-b-xs">
+                    <select class="input-sm form-control w-sm inline v-middle">
+                        <option value="0">Bulk action</option>
+                        <option value="completed">Mark As Completed</option>
+                        <option value="delete">Delete selected</option>
+                        <!-- <option value="2">Bulk edit</option>
+                             <option value="3">Export</option>
+
+                            -->
+
+                    </select>
+                    <button class="btn btn-sm btn-default">Apply</button>
+                </div>
+                <div class="col-sm-4 text-right">
+                    
+                    <button type="button" class="btn btn-sm btn-info" ng-click="createEvent()">Create Event</button>
+
+                </div>
+                <div class="col-sm-3">
+                    <div class="input-group">
+
+                  @if(ViewData["search"] != null) {
+
+                    <input type="text" ng-model="searchText" id = "search_id" data-searchValue="@ViewData["search"]" class="input-sm form-control" />
+
+                      }else{
+
+                        <input type="text" ng-model="searchText" class="input-sm form-control" placeholder="Search" />
+        
+                    }
+                        
+
+                        <span class=" input-group-btn">
+
+                            <button class="btn btn-sm btn-default" ng-click="search()" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped b-t b-light">
+                    <thead>
+                        <tr>
+                            <th style="width:20px;">
+                                <label class="i-checks m-b-none">
+                                    <input ng-model="selectedAll" ng-click="checkAll()" type="checkbox"><i></i>
+                                </label>
+                            </th>
+                            <th>Event Id</th>
+                            <th>Title</th>
+                            <th>Location</th>
+                            <th>Description</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Start Time </th>
+                            <th>End Time </th>
+                            <th>Status</th>
+                            <th>Event User</th>
+                            <th>Actions</th>
+
+                            <th style="width:30px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @*
+                            <tr ng-repeat="book in books | filter:search">
+
+                                <td>
+
+
+                                    <label class="i-checks m-b-none">
+                                        <input type="checkbox" data-ng-model="book.Selected"><i></i>
+                                    </label>
+
+
+                                </td>
+
+                                <td>
+                                    {{book.event_id}}
+                                </td>
+                                <td>
+                                    {{book.title}}
+                                </td>
+                                <td>
+                                    {{book.location}}
+                                </td>
+                                <td>
+                                    {{book.description}}
+                                </td>
+                                <td>
+                                    {{book.start_date|date:'medium'| date:'yyyy-MM-dd HH:mm:ss Z'|date:'MM/dd/yyyy'|date:"MM/dd/yyyy 'at' h:mma"}}
+                                </td>
+                                <td>
+                                    {{book.end_date}}
+                                </td>
+                                <td>
+                                    {{book.start_time}}
+                                </td>
+                                <td>
+                                    {{book.end_time}}
+                                </td>
+                                <td>
+                                    <div ng-if="book.status == '1'">
+                                        <span class="label bg-success">Completed</span>
+                                    </div>
+                                    <div ng-if="book.status == '0'">
+                                        <span class="label bg-info">Pending</span>
+
+                                    </div>
+                                </td>
+                                <td>
+                                    {{book.user_id}}
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-info" ng-click="editBook(book)">Edit</button>
+                                    <button type="button" class="btn btn-sm btn-danger" ng-click="deleteBook(book)">Delete</button>
+                                </td>
+                            </tr>
+                                        @foreach (Mvc4Crud.Models.Events eve in Model)*@
+
+                        @foreach (var eve in Model)
+
+                            {
+                        <tr id="@eve.event_id">
+                            <td>
+                                <label class="i-checks m-b-none">
+                                    <input type="checkbox" data-ng-model="book.Selected"><i></i>
+                                </label>
+                            </td>
+                            <td> @eve.event_id</td>
+                            <td> @eve.title</td>
+                            <td> @eve.location</td>
+                            <td> @eve.description</td>
+
+                            <td>
+                                @{
+                                DateTime date = DateTime.Parse(Convert.ToString(eve.start_date));
+                                string displayTime1 = date.ToString("yyyy-MM-dd");
+
+
+                                DateTime date1 = DateTime.Parse(Convert.ToString(eve.end_date));
+                                string displayTime2 = date1.ToString("yyyy-MM-dd");
+
+                                TimeSpan start_time = (TimeSpan)eve.start_time;
+                                TimeSpan end_time = (TimeSpan)eve.end_time;
+
+                                DateTime time1 = DateTime.Today.Add(start_time);
+                                string startt = time1.ToString("hh:mm tt");
+
+
+                                DateTime time2 = DateTime.Today.Add(end_time);
+                                string endt = time2.ToString("hh:mm tt");
+                                }
+
+                                @displayTime1
+                             
+                            
+                            </td>
+                            <td> @displayTime2</td>
+
+                            <td>
+                                
+                               @startt
+                            
+                            </td>
+
+                            <td> @endt</td>
+                            <td>
+                                @if (eve.status.Equals("1"))
+                                        {
+                                        <span class="label bg-success">Completed</span>
+                                        }
+                                        else
+                                        {
+                                        <span class="label bg-info">Pending</span>
+                                        }
+                            </td>
+
+                            <td> @eve.user_id</td>
+                            <td>
+                                <button type="button" data-event_id="@eve.event_id" class="btn btn-sm btn-info editButton">Edit</button>
+                                <button type="button" class="btn btn-sm btn-danger" ng-click="deleteBook(@eve.event_id)">Delete</button>
+                            </td>
+                        </tr>
+                            }
+                    </tbody>
+
+                </table>
+            </div>
+
+            <div ng-show="divBook">
+                <p class="divHead"></p>
+                <table class="table">
+                    <tr>
+                        <td><b><i>{{Action}} Event</i></b></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><b>Id</b></td>
+                        <td>
+                            <input type="text" disabled="disabled" ng-model="event_id" />
+                        </td>
+                        <td><b>Title</b></td>
+                        <td>
+                            <input type="text" ng-model="title" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Location</b></td>
+                        <td>
+
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label text-left">Default</label>
+                                <div class="col-sm-6">
+
+                                    <ui-select ng-model="location" theme="bootstrap">
+                                        <ui-select-match placeholder="Select or search a Country in the list...">{{$select.selected.name}}</ui-select-match>
+                                        <ui-select-choices repeat="item in countries | filter: $select.search">
+                                            <div ng-bind-html="item.country_name | highlight: $select.search"></div>
+                                            <small ng-bind-html="item.code | highlight: $select.search"></small>
+                                        </ui-select-choices>
+                                    </ui-select>
+
+                                </div>
+                            </div>
+
+
+</td>
+                        <td><b>Description</b></td>
+                        <td>
+                            <input type="text" ng-model="description" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b>Start Date</b></td>
+                        <td>
+                            
+                            
+                            <div class="col-sm-4" ng-controller="DatepickerDemoCtrl">
+                                <div class="input-group w-md">
+                                    <input type="text" data-ng-model="start_date" class="form-control" datepicker-popup="{{format}}"
+                                           is-open="opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td><b>End Date</b></td>
+                        <td>
+                            <div class="col-sm-4" ng-controller="DatepickerDemoCtrl">
+                                <div class="input-group w-md">
+                                    <input type="text" data-ng-model="end_date" class="form-control" datepicker-popup="{{format}}"
+                                           is-open="opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" />
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+                                    </span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <b>Start Time</b>
+                        </td>
+                        <td>
+                            <input type="text" ng-model="start_time" />
+                        </td>
+                        <td>
+                            <b>End Time</b>
+                        </td>
+                        <td>
+                            <input type="text" ng-model="end_time" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <div class="checkbox">
+                                        <label class="i-checks">
+                                            <input ng-model="status" type="checkbox"><i></i> Status
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <input type="button" class="btn btn-default" value="Save" ng-click="AddUpdateBook()" />
+                            <input type="button" class="btn btn-danger" value="Cancel" ng-click="Cancel()" />
+                        </td>
+                    </tr>
+                </table>
+                </div>
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <footer class="panel-footer">
+                <div class="row">
+                    <div class="col-sm-4 hidden-xs">
+
+                    </div>
+                    <div class="col-sm-4 text-center">
+
+                        <div id="Paging" style="text-align:center">
+                            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+                            of @Model.PageCount
+
+                            @Html.PagedListPager(Model, page => Url.Action("listEvent", new { page }),
+                                PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions(){  HttpMethod = "GET", UpdateTargetId = "EventGrid"}))
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var page = "";
+    var searchEvent = "";
+    var globalEvent_id = "";
+
+    $(document).ready(function () {
+
+        $("a[data-ajax='true']").click(function () {
+
+
+            page = $(this).attr("href");
+
+            angular.element(document.getElementById('tableEventListController_id')).scope().reloadEventList(page, $(this).text());
+
+
+            return false;
+            e.preventDefault();
+
+        });
+
+
+        $(".editButton").click(function () {
+            // Holds the product ID of the clicked element
+            globalEvent_id = $(this).attr("data-event_id");
+
+            //console.log('pn page', globalEvent_id);
+
+            angular.element(document.getElementById('tableEventListController_id')).scope().editBook(globalEvent_id);
+
+        });
+   
+    });
+
+</script>

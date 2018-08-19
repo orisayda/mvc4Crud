@@ -1,0 +1,32 @@
+﻿@model Mvc4Crud.Models.Users
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Details</h2>
+<p>
+    @Html.ValidationSummary()
+</p>
+
+@using (Html.BeginForm("EditUser", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+
+{
+    <p>
+        User Id: @Html.TextBoxFor(m => m.user_id, new { @readonly = true })
+    </p>
+    <p>
+        First Name: @Html.TextBoxFor(m => m.first_name)
+    </p> <p>
+        Last Name: @Html.TextBoxFor(m => m.last_name)
+    </p> <p>
+        Email: @Html.TextBoxFor(m => m.email)
+    </p>
+    <p>
+        Password: @Html.TextBoxFor(m => m.password)
+    </p>
+    <p>
+        <input type="submit" value="Update User">
+    </p>
+}
+
+

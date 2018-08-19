@@ -1,0 +1,66 @@
+﻿@model Mvc4Crud.Models.Users
+
+@{
+    ViewBag.Title = "View1";
+}
+
+<h2>View1</h2>
+
+<div>
+    <h4>Users</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(userData => userData.user_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(userData => userData.user_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(userData => userData.first_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(userData => userData.first_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(userData => userData.last_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(userData => userData.last_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(userData => userData.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(userData => userData.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(userData => userData.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(userData => userData.password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(userData => userData.ConfirmPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfirmPassword)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

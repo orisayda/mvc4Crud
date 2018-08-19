@@ -1,0 +1,401 @@
+﻿
+@model PagedList.IPagedList<Mvc4Crud.Models.Tasks>
+      
+
+@using PagedList.Mvc;
+
+@*model List<Mvc4Crud.Models.Events>*@
+
+@{
+    Layout = null;
+}
+
+<style>
+
+    .red {
+        color: #000;
+        cursor: not-allowed;
+        background-color: #0026ff;
+    }
+    .blue {
+        color: #0026ff;
+        cursor: not-allowed;
+        background-color: #777
+    }
+    .black {
+       
+    }
+</style>
+
+
+
+<div class="bg-light lter b-b wrapper-md">
+    <h2 class="m-n font-thin h3">Tasks List</h2>
+</div>
+<div class="wrapper-md" ng-controller="TableEventListController" id="tableEventListController_id" ng-init="app.settings.container = false;">
+    <div class="row">      
+
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+
+                <button type="button" class="btn btn-sm btn-success" ng-click="createEvent()">CREATE TASK</button>
+                
+            </div>
+            <div class="row wrapper">
+
+                <div class="col-sm-3 col-xs-12 m-b-xs">
+                    <label>Sort By</label> &nbsp;
+                    <select ng-model="sortBy.selected" id="sortById" data-sortvalue="@ViewData["sortBy"]" class="input-sm form-control w-sm inline v-middle simpleSort">
+                        <option value="event_id">Recently Created</option>
+                        <option value="title">Title</option>
+                        @*<option value="high_priority">Priority</option>*@
+                        <option value="start_date">Start Date</option>
+                        <option value="end_date">End Date</option>
+
+                    </select>
+                    <button class="btn btn-sm btn-default" ng-click="sortTasks()">Sort</button>    
+                   
+                </div>
+                <div class="col-sm-4 col-xs-12 m-b-xs">
+                    <label>Sort by Priority</label> &nbsp;
+                    <select ng-model="sort_priority" ng-init="sort_priority='select1'" id="sort_priority" data-sort_priority_value="@ViewData["sortBy"]" class="input-sm form-control w-sm inline v-middle prioritySort">
+                        <option value="select1">Select Priority</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                    <button class="btn btn-sm btn-default" ng-click="sort_priorityfunction(sort_priority)">Sort</button>
+
+                </div>
+                <div class="col-sm-2 col-xs-12 text-left">
+                    @{
+                        string status ;
+                        if (ViewData["status"] != null)
+                        {   
+                           
+                                  status  = Convert.ToString(ViewData["status"]);
+
+                        }
+                        else
+                        {
+                            status = "1";
+                        }
+                        
+                       
+                    }
+
+                    <button class="btn btn-sm btn-default" id="status_id" data-statusvalue="@(status)" ng-click="searchbystatus()">{{showCompleted}}</button>
+                    
+
+                </div>
+                <div class="col-sm-3 col-xs-12 m-b-xs">
+                    <div class="input-group">
+
+                        @if (ViewData["search"] != null)
+                        {
+
+                            <input type="text" ng-model="searchText" id="search_id" data-searchvalue="@ViewData["search"]" class="input-sm form-control" />
+
+                        }
+                        else
+                        {
+
+                            <input type="text" ng-model="searchText" class="input-sm form-control" placeholder="Search" />
+
+                        }
+
+
+                        <span class=" input-group-btn">
+
+                            <button class="btn btn-sm btn-default" ng-click="search()" type="button">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table b-t b-light">
+                    <thead>
+                        <tr>
+                           
+                            <th>TASK ID</th>
+                            <th>TITLE</th>
+                           
+                            <th>DESCRIPTION</th>
+                            <th>START DATE</th>
+                            <th>END DATE</th>
+                           
+                            <th>PRIORITY</th>
+                            
+                            <th>ACTIONS</th>
+
+                            <th style="width:33px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        @*<tr ng-repeat="task in tasks"  ng-class='{red : task.start_date < date, black: task.start_date < date}'>*@
+                        <tr ng-repeat="task in tasks"  ng-class='{red : task.start_date < date, black: task.start_date > date}'>
+
+
+                            <td>
+                                {{task.event_id}}
+                            </td>
+                            <td>
+                                {{task.title}}
+                            </td>
+
+                            <td>
+                                {{task.description}}
+                            </td>
+                            <td>
+                                <div>
+                                    {{task.start_date}}
+                                </div>
+                                <div ng-if="task.isTimeSet == '1'">
+                                    <label class="label bg-success">{{task.start_time}}</label>
+                                </div>
+
+
+                            </td>
+                            <td>
+                                <div>
+                                    {{task.end_date}}
+                                </div>
+                                <div ng-if="task.isTimeSet == '1'">
+                                    <label class="label bg-dark">{{task.end_time}}</label>
+                                </div>
+
+                            </td>
+
+                            <td style="vertical-align:middle;">
+                                @*<div class="label label-info">
+                    {{task.priority}}
+                </div>*@
+
+
+                                <div ng-if="task.priority == 'High'">
+                                    <label class="label bg-danger" style="font-size: 15px;">High</label>
+                                </div>
+
+                                <div ng-if="task.priority == 'Medium'">
+                                    <label class="label bg-warning" style="font-size: 15px;">Medium</label>
+                                </div>
+
+                                <div ng-if="task.priority == 'Low'">
+                                    <label class="label bg-info" style="font-size: 15px;">Low</label>
+                                </div>
+                            </td>
+
+
+                            <td>
+
+                                <button type="button" class="btn btn-xs btn-info" ng-click="editBook(task.event_id)">EDIT</button>
+                                <button type="button" class="btn btn-xs btn-danger" ng-click="deleteBook(task.event_id,task)">DELETE</button>
+                            </td>
+
+
+                        </tr>
+                        
+                                        @*
+
+    @foreach (var eve in Model)
+
+        {
+    <tr id="@eve.event_id">
+        <td>
+            <label class="i-checks m-b-none">
+                <input type="checkbox" data-ng-model="book.Selected"><i></i>
+            </label>
+        </td>
+        <td> @eve.event_id</td>
+        <td> @eve.title</td>
+
+        <td> @eve.description</td>
+
+        <td>
+            @{
+            DateTime date = DateTime.Parse(Convert.ToString(eve.start_date));
+            string displayTime1 = date.ToString("yyyy-MM-dd");
+
+
+            DateTime date1 = DateTime.Parse(Convert.ToString(eve.end_date));
+            string displayTime2 = date1.ToString("yyyy-MM-dd");
+
+            TimeSpan start_time = (TimeSpan)eve.start_time;
+            TimeSpan end_time = (TimeSpan)eve.end_time;
+
+            DateTime time1 = DateTime.Today.Add(start_time);
+            string startt = time1.ToString("hh:mm tt");
+
+
+            DateTime time2 = DateTime.Today.Add(end_time);
+            string endt = time2.ToString("hh:mm tt");
+            }
+
+            @displayTime1
+
+
+        </td>
+        <td> @displayTime2</td>
+
+        <td>
+
+           @startt
+
+        </td>
+
+        <td> @endt</td>
+        <td>
+            @if (eve.status.Equals("1"))
+                    {
+                    <span class="label bg-success">Completed</span>
+                    }
+                    else
+                    {
+                    <span class="label bg-info">Pending</span>
+                    }
+        </td>
+
+        <td> @eve.user_id</td>
+        <td>
+            <button type="button" data-event_id="@eve.event_id" class="btn btn-sm btn-info editButton">Edit</button>
+            <button type="button" class="btn btn-sm btn-danger" ng-click="deleteBook(@eve.event_id)">Delete</button>
+        </td>
+    </tr>
+        }
+*@
+                    </tbody>
+                </table>
+            </div>
+
+
+            </div>
+            <footer class="panel-footer">
+                <div class="row">
+                    <div class="col-sm-4 hidden-xs">
+
+                    </div>
+                    <div class="col-sm-4 text-center">
+
+                        <div id="Paging" style="text-align:center">
+                            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+                            of @Model.PageCount
+
+                            @Html.PagedListPager(Model, page => Url.Action("listEvent", new { page }),
+                                PagedListRenderOptions.EnableUnobtrusiveAjaxReplacing(new AjaxOptions(){  HttpMethod = "GET", UpdateTargetId = "EventGrid"}))
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var page = "";
+    var searchEvent = "";
+    var globalEvent_id = "";
+    
+
+    if (toDoEventRoutes.dashboardLoad == 1) {
+
+        //loadModel();
+        var eventList = getTasks();
+    
+        //console.log('listEvent.cshtml', eventList);
+
+         toDoEventRoutes.dashboardLoad = 2;
+
+    }
+
+         
+    
+
+
+    //var eventList = @*Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model));*@
+
+
+    //angular.element(document.getElementById('tableEventListController_id')).scope().TestAngularMethod(eventList);
+
+
+    //console.log(eventList);
+
+    $(document).ready(function () {
+       
+
+        $("a[data-ajax='true']").click(function () {
+
+
+            page = $(this).attr("href");
+
+            //updatedRecords = getTasks();
+
+            //console.log(updatedRecords);
+
+            angular.element(document.getElementById('tableEventListController_id')).scope().reloadEventList(page, $(this).text());
+
+
+            return false;
+            e.preventDefault();
+
+        });
+
+        
+        /*$(".editButton").click(function () {
+            // Holds the product ID of the clicked element
+            globalEvent_id = $(this).attr("data-event_id");
+
+            //console.log('pn page', globalEvent_id);
+
+            angular.element(document.getElementById('tableEventListController_id')).scope().editBook(globalEvent_id);
+
+        });*/
+
+
+       
+        /*(function(){
+            //angular.element(document.getElementById('tableEventListController_id')).scope().loadDataList1(eventList);
+            //angular.element(document.getElementById('tableEventListController_id')).scope().loadDataList(eventList);
+            //console.log('onload');
+        })();*/
+
+    
+   
+    });
+
+
+    function getTasks() {
+
+        var events = [];
+
+       @foreach (var eve in Model)
+        {
+        
+            DateTime date = DateTime.Parse(Convert.ToString(eve.start_date));
+            string startDate = date.ToString("yyyy-MM-dd");
+
+
+            DateTime date1 = DateTime.Parse(Convert.ToString(eve.end_date));
+            string endDate = date1.ToString("yyyy-MM-dd");
+
+            TimeSpan start_time = (TimeSpan)eve.start_time;
+            TimeSpan end_time = (TimeSpan)eve.end_time;
+
+            DateTime time1 = DateTime.Today.Add(start_time);
+            string startTime = time1.ToString("hh:mm tt");
+
+
+            DateTime time2 = DateTime.Today.Add(end_time);
+            string endTime = time2.ToString("hh:mm tt");
+        
+            @:events.push({ event_id: "@eve.event_id", title: "@eve.title", description: "@eve.description", start_date: "@startDate", end_date: "@endDate", start_time: "@startTime", end_time: "@endTime", status: "@eve.status",priority:"@eve.priority",isTimeSet:"@eve.isTimeSet" });
+                                    
+        }
+
+        return events;
+    }
+
+  
+</script>
